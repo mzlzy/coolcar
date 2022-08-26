@@ -18,7 +18,7 @@ func main() {
 	}
 
 	tsClient := trippb.NewTripServiceClient(conn)
-	resp, err := tsClient.GetTrip(context.Background(), &trippb.GetTripRequest{Id: "456"})
+	resp, err := tsClient.GetTrip(context.Background(), &trippb.GetTripRequest{Id: "6789"})
 	if err != nil {
 		log.Fatalf("cannot call GetTrip: %v", err)
 	}
